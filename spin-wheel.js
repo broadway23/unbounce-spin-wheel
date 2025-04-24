@@ -5,16 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-const styleElem = document.createElement("style");
-styleElem.innerHTML = `
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-`;
-document.head.appendChild(styleElem);
-
 // 1) GET CONTAINER
 const containerDesktop = document.getElementById("spin-wheel-desktop");
 containerDesktop.style.position = "relative";
